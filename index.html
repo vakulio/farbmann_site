@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farbmann - краски высокого качества</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul id="menu" class="menu">
+                    <li class="menu_item"><a href="#main" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">О компании</a></li>
+                    <li class="menu_item"><a href="#partner" class="menu_link">Партнерство</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Блог</a></li>
+                    <li class="menu_item"><a href="#logistic" class="menu_link">Оплата и доставка</a></li>
+                    <li class="menu_item"><a href="#contacts" class="menu_link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="subheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4 offset-md-1">
+                        <a href="#" class="subheader_logo"><img src="./icons/logo-farbmann.jpg" alt="logo"></a>
+                        <div class="subheader_official">Официальный дистрибьютор продукции в Беларуси</div>
+                    </div>
+    
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+                        <div class="subheader_call">Горячая линия</div>
+                        <a href="tel:375291525555" class="subheader_phone">+375291525555</a>
+                    </div>
+    
+                    <div class="col-6 col-md-3">
+                        <a href="tel:375291525555" class="xs-visible subheader_phone">+375291525555</a>
+                        <form action="#popup"><button class="subheader_btn">заказать звонок</button></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="container">
+            <div class="black"></div>
+            <h2 class="title title_black main_title">
+                <a href="#" class="prod_button"><img src="./img/topban1.png" alt="Краски"></a>
+                <a href="#" class="prod_button"><img src="./img/topban2.png" alt="подбор"></a></h2>
+            <div class="subtitle"> Мы команда профессионалов. Мы надежный партнер. Мы предоставляем эффективное и комплексное ремонтное решение. Мы вдохновляем людей создавать новые и креативные идеи. Мы задаем тренд.</div>         
+            <div class="main_slider">
+                <div class="main_slider_item">
+                  <img src="img/bg/main_bg.jpg" alt="Первый слайд">
+              </div>
+          
+              <div class="main_slider_item">
+                  <img src="img/bg/second_bg.jpg" alt="Второй слайд">
+              </div>
+          
+              <div class="main_slider_item">
+                  <img src="img/bg/third_bg.jpg" alt="Третий слайд">
+              </div>
+          
+                <a class="main_slider_prev" onclick="minusSlide()">&#10094;</a>
+                <a class="main_slider_next" onclick="plusSlide()">&#10095;</a>
+          </div>
+          <br>
+          <div class="slider-dots">
+                <span span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+          </div>
+
+            <div class="main_descr hidden-320">
+                Краски на каждый день.<br>
+                Лучшая формула БЫСТРО+КАЧЕСТВЕНО+НЕДОРОГО
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons">
+        <div class="container">
+            <div class="label _anim-items _anim-show" id="partner">Партнерство</div>
+            <h2 class="title _anim-items _anim-show">8 причин начать работать с нами</h2>
+            <div class="subtitle subtitle_black hidden-320 _anim-items _anim-show"> Наша цель – стабильные и долговременные деловые отношения</div>       
+            <div class="row">
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_1.png" alt="Качество">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Качественный продукт</div>
+                            <div class="reasons_text">
+                                Farbmann - краски европейского уровня с гарантией качества. В каждой капле - концентрированный опыт команды специалистов и профессионалов. Это материалы для всего спектра малярных работ. Они позволяют совершить полный цикл окрашивания: от подготовки до финиша на любых поверхностях.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_2.png" alt="Выгода">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Выгодные условия работы</div>
+                            <div class="reasons_text">
+                                У нас минимальная комиссия и мы предоставляем бонусы за каждую реализацию. Мы работаем честно, а предприниматели зарабатывают с нами больше! Также мы предоставляем скидки постоянным клиентам. Работаем с индивидуальными предпринимателями и крупными сетями строительных гипермаркетов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_3.png" alt="Оперативность">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Оперативность поставок собственным транспортом</div>
+                            <div class="reasons_text">
+                                Заказы на поставку товара, мы доставляем транспортом нашей компании, в удобные для вас сроки.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_4.png" alt="Менеджер">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Предоставляем персонального менеджера</div>
+                            <div class="reasons_text">
+                                Компания "Краски Колорит" предоставит вам персонального менеджера для консультации по продукции. Так же менеджер будет оказывать вам услуги по логистике продукта.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_5.png" alt="Бонусы">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Приятные бонусы и скидки</div>
+                            <div class="reasons_text">
+                               Ежемесячно предоставляем скидки для клиентов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_6.png" alt="Мастер-классы">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Регулярные мастер-классы</div>
+                            <div class="reasons_text">
+                                Обучения и конкретные занятие по совершенствованию практического мастерства, проводимые специалистом в области малярной деятельности для интересующихся лиц.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_7.png" alt="Снабжение">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Снабжение мест продаж маркетинговыми материалами</div>
+                            <div class="reasons_text">
+                                Предоставляем заводские выкрасы и каталоги по стандартам Tikkurila Symphoni и RAL.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                    <div class="reasons_block">
+                        <div class="reasons_round">
+                            <img src="icons/reasons/reason_8.png" alt="reason">
+                        </div>
+                        <div class="reasons_descr">
+                            <div class="reasons_subtitle">Обеспечение колеровочным оборудованием</div>
+                            <div class="reasons_text">
+                                Вам будет предоставлено оборудование компании Tikkurila. Такие колеровочные машины разрабатывались с учетом огромного многолетнего опыта производства красок на протяжении 155 лет работы компании.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logistic" id="logistic">
+        <div class="container">
+            <div class="label _anim-items _anim-show">Логистика</div>
+            <h2 class="title _anim-items _anim-show">ОПЛАТА И ДОСТАВКА</h2>
+        <div class="row">
+            <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                <div class="logistic_block">
+                    <div class="logistic_title">
+                        ПО МИНСКУ курьерской службой:
+                    </div>
+                    <ul class="logistic_list">
+                        <li>Курьерской службой – бесплатно.</li>
+                        <li>
+                            Отправка продукции осуществляется на следующий день после 100% оплаты.
+                        </li>
+                        <li>
+                            Доставка осуществляется в течение 24 часов после отправки.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 _anim-items _anim-show _anim-no-hide">
+                <div class="logistic_block">
+                    <div class="logistic_title">
+                        ПО БЕЛАРУСИ курьерской службой:
+                    </div>
+                    <ul class="logistic_list">
+                        <li>Курьерской службой – бесплатно.</li>
+                        <li>
+                            Отправка продукции осуществляется на следующий день после 100% оплаты.
+                        </li>
+                        <li>
+                            Доставка осуществляется в течение 7-14 дней после отправки.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 _anim-items _anim-show _anim-no-hide">
+                <div class="logistic_descr">
+                    <div class="logistic_title">
+                        Способы оплаты товара:
+                    </div>
+                    <ul>
+                        <li>предоплата наличными в кассу предприятия;</li>
+                        <li>на расчетный счет предприятия (через отделения банка);</li>
+                        <li>интернет-банкинг (произвольный платеж на реквизиты).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 _anim-items _anim-show _anim-no-hide">
+                <div class="subtitle"> 
+                    <h3>ВНИМАНИЕ! ПРОВЕРЯЙТЕ ЦЕЛОСТНОСТЬ ТАРЫ ПРИ ПОЛУЧЕНИИ ТОВАРА.</h3>
+                    Согласно Ст. 28 Закона Республики Беларусь «О защите прав потребителей» Вы можете вернуть или обменять купленный товар в течение 14 дней с момента приобретения его в нашем магазине при условии соблюдения всех норм Закона.
+                    <h4>Обмен товара надлежащего качества производится:</h4> 
+                   <div class="subtitle_return">
+                   <ul>
+                   <li>если он не использовался;</li> 
+                   <li>если он не подвергался колеровке;</li>
+                   <li>если сохранен его товарный вид;</li> 
+                   <li>если сохранены потребительские свойства, пломбы, ярлыки;</li> 
+                   <li>при наличии расчётных документов, выданных покупателю вместе с товаром.</li>
+                </ul>
+                   <b>Перед использованием продукции потребитель обязан ознакомиться с инструкцией по применению и техническими характеристиками.</b> 
+                </div>
+                </div>  
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="label label_white label_min _anim-items _anim-show _anim-no-hide">Контакты</div>
+            <h2 class="title title_black _anim-items _anim-show _anim-no-hide">По всей Беларуси</h2>
+            <div class="subtitle subtitle_white _anim-items _anim-show _anim-no-hide">Мы в вашем городе и по всей Беларуси</div>
+            <div class="contacts_content">
+                <div class="tab">
+                    <button class="tab_button" onclick="openCity(event, 'Brest')">Брест</button>
+                    <button class="tab_button" onclick="openCity(event, 'Vitebsk')">Витебск</button>
+                    <button class="tab_button" onclick="openCity(event, 'Gomel')">Гомель</button>
+                    <button class="tab_button" onclick="openCity(event, 'Grogdo')">Гродно</button>
+                    <button class="tab_button" onclick="openCity(event, 'Minsk')">Минск</button>
+                    <button class="tab_button" onclick="openCity(event, 'Mogilev')">Могилев</button>
+                  </div>
+                  <div id="Brest" class="tab_content">
+                    <h3>Брест</h3>
+                      <table class="adress">
+                        <tbody>
+                            <tr>
+                                <td><br>КОЛОР СТУДИЯ TIKKURILA Фирменный магазин</br></td>
+                                <td>Брест</td>
+                                <td>ул. Карьерная 5 « Е»</td>
+                                <td><a href="tel:+375291441450" title="Кликни чтобы позвонить">+375(29)1441450;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ИП ПЛИСЮК А.С.</td>
+                                <td>Брест</td>
+                                <td>ул. Советской конституции, рынок пав. 15</td>
+                                <td><a href="tel:+375336724172" title="Кликни чтобы позвонить">+375(33)6724172;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ИП НОВИК Е.Е.</td>
+                                <td>Брест</td>
+                                <td>ул.Старозадворская, 4, Павильон 48</td>
+                                <td><a href="tel:+375292283828" title="Кликни чтобы позвонить">+375(29)2283828;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>МАТЕРИК</td>
+                                <td>Брест</td>
+                                <td>ул. 28 Июля, 30</td>
+                                <td><a href="tel:+375162272700" title="Кликни чтобы позвонить">+375(162)272700;</a></td>
+                                <td><a href="http://www.diy.by">www.diy.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ООО "ТАНОС"</td>
+                                <td>Брест</td>
+                                <td>ул.Карьерная, д.11 (павильон Снежка)</td>
+                                <td><a href="tel:+375333586700" title="Кликни чтобы позвонить">+375(33)3586700;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>МУХА ЮЛИЯ ВАДИМОВНА, ИП</td>
+                                <td>Брест</td>
+                                <td>ул. Карьерная 12, корп. 1В (пав 103)</td>
+                                <td><a href="tel:+375292274785" title="Кликни чтобы позвонить">+375(29)2274785;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>MILE</td>
+                                <td>Брест</td>
+                                <td>ул. Карьерная, 9Б</td>
+                                <td><a href="tel:+375162507501" title="Кликни чтобы позвонить">+375(162)507501;</a></td>
+                                <td><a href="http://mile.by">mile.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ЛОБАНОВА Н.А.</td>
+                                <td>Брест</td>
+                                <td>ул.Гоголя, д. 3 (рынок ЗАО "Забудова-Брест")</td>
+                                <td><a href="tel:+375336722772" title="Кликни чтобы позвонить">+375(33)6722772;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ЭЛЕФАНТ-КОЛОР ООО</td>
+                                <td>Барановичи</td>
+                                <td>ул. Пролетарская, 46</td>
+                                <td><a href="tel:+375298017992" title="Кликни чтобы позвонить">+375(29)8017992;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ИП ФЕДЕЧКО О.Н.</td>
+                                <td>Пинск</td>
+                                <td>г. Пинск, Солнечная, 1, Павильон "Мир цвета-2"</td>
+                                <td><a href="tel:+375296658573" title="Кликни чтобы позвонить">+375(29)6658573;</a></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                  <div id="Vitebsk" class="tab_content">
+                    <h3>Витебск</h3>
+                    <table class="adress">
+                            <tbody>
+                                <tr>
+                                    <td>ООО БЕЛЗАЩИТА</td>
+                                    <td>Витебск</td>
+                                    <td>ул. Правды 63 а</td>
+                                    <td><a href="tel:+375292720722" title="Кликни чтобы позвонить">+375(29)2720722;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ИП КУДИНОВА</td>
+                                    <td>Витебск</td>
+                                    <td>С. Поньковой, 2, пав. 73а</td>
+                                    <td><a href="tel:+375293723184" title="Кликни чтобы позвонить">+375(29)3723184;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ООО СМАЙЛ КОЛОР</td>
+                                    <td>Витебск</td>
+                                    <td>	ул. Терешковой, 19, Строймаркет "Энергия", пав.№13</td>
+                                    <td><a href="tel:+375445688889" title="Кликни чтобы позвонить">+375(44)5688889;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ИП МОГУЧАЯ</td>
+                                    <td>Витебск</td>
+                                    <td>С. Поньковой, 2</td>
+                                    <td><a href="tel:+375296088666" title="Кликни чтобы позвонить">+375(29)6088666;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ИП АНТОНЕНКО</td>
+                                    <td>Витебск</td>
+                                    <td>ул. Терешковой 3а</td>
+                                    <td><a href="tel:+375297112571" title="Кликни чтобы позвонить">+375(29)7112571;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ООО УНИФАРБ КРАСКИ</td>
+                                    <td>Витебск</td>
+                                    <td>пр. Строителей, д.24, корп.4</td>
+                                    <td><a href="tel:+375297103798" title="Кликни чтобы позвонить">+375(29)7103798;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ООО АМАНД</td>
+                                    <td>Витебск</td>
+                                    <td>ул. П. Бровки, 22-2</td>
+                                    <td><a href="tel:+375333655597" title="Кликни чтобы позвонить">+375(33)3655597;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ООО МИКС ХАУС</td>
+                                    <td>Витебск</td>
+                                    <td>ул. П.Бровки, 20</td>
+                                    <td><a href="tel:+375295951071" title="Кликни чтобы позвонить">+375(29)5951071;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ИП КРЮКОВА</td>
+                                    <td>Витебск</td>
+                                    <td>ул. 4 ая Заслонова 1 А</td>
+                                    <td><a href="tel:+375298144444" title="Кликни чтобы позвонить">+375(29)8144444;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ИП ЗЮЗЬКОВ</td>
+                                    <td>Орша</td>
+                                    <td>ул. Замкавая, 3</td>
+                                    <td><a href="tel:+375297161265" title="Кликни чтобы позвонить">+375(29)7161265;</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ЧП КРАСКИНО</td>
+                                    <td>Полоцк</td>
+                                    <td>ул. Гагарина 36 А</td>
+                                    <td><a href="tel:+375291905057" title="Кликни чтобы позвонить">+375(29)1905057;</a></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                  </div>
+                  <div id="Gomel" class="tab_content">
+                    <h3>Гомель</h3>
+                      <table class="adress">
+                        <tbody>
+                            <tr>
+                                <td><br>КОЛОР СТУДИЯ TIKKURILA Фирменный магазин</br></td>
+                                <td>Гомель</td>
+                                <td>ул. Федосеенко 4а</td>
+                                <td><a href="tel:+375447411124" title="Кликни чтобы позвонить">+375(44)7411124;</a></td>
+                                <td><a href="http://www.farbaservis.by">www.farbaservis.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ДЫМОХОД ПЛЮС</td>
+                                <td>Гомель</td>
+                                <td>ул. Лещинская, 2а/5</td>
+                                <td><a href="tel:+375299692081" title="Кликни чтобы позвонить">+375(29)9692081;</a></td>
+                                <td><a href="http://dymplus.by">dymplus.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ДЕРЕВЯННЫЙ УГОЛОК</td>
+                                <td>Гомель</td>
+                                <td>ул. Салтыкова-Щедрина, 2</td>
+                                <td><a href="tel:+375293775282" title="Кликни чтобы позвонить">+375(29)3775282;</a></td>
+                                <td><a href="http://drev-ugol.by">drev-ugol.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>СТУДИЯ ЦВЕТА ВАДИМА МАРТЫНЕНКО</td>
+                                <td>Гомель</td>
+                                <td>ул. 1-я Встречная, 33</td>
+                                <td><a href="tel:+375296539873" title="Кликни чтобы позвонить">+375(29)6539873;</a></td>
+                                <td><a href="http://sites.google.com/view/desan-gomel">sites.google.com/view/desan-gomel</a></td>
+                            </tr>
+                            <tr>
+                                <td>ПАЛАС</td>
+                                <td>Гомель</td>
+                                <td>ул. Советская, 97/2</td>
+                                <td><a href="tel:+375232220375" title="Кликни чтобы позвонить">+375(232)220375;</a></td>
+                                <td><a href="http://www.palas.by">www.palas.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ОПТОВО-РОЗНИЧНЫЙ СКЛАД-МАГАЗИН ООО МКДФ</td>
+                                <td>Гомель</td>
+                                <td>ул. Шилова,15</td>
+                                <td><a href="tel:+375293513038" title="Кликни чтобы позвонить">+375(29)3513038;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ООО ВЕСНА-7</td>
+                                <td>Гомель</td>
+                                <td>ул.Федюненского, 19А</td>
+                                <td><a href="tel:+375232683250" title="Кликни чтобы позвонить">+375(232)683250;</a></td>
+                                <td><a href="http://stroi-ka.by">stroi-ka.by</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                  <div id="Grogdo" class="tab_content">
+                    <h3>Гродно</h3>
+                       <table class="adress">
+                            <tbody>
+                                <tr>
+                                    <td>АВАЛОНСТРОЙГРУПП ЧАСТНОЕ ПРЕДПРИЯТИЕ</td>
+                                    <td>Гродно</td>
+                                    <td>ул. Щорса, д.19, офис 2</td>
+                                    <td><a href="tel:+375291136209" title="Кликни чтобы позвонить">+375(29)1136209;</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>МАТЕРИК</td>
+                                    <td>Гродно</td>
+                                    <td>ул. Белуша, 56</td>
+                                    <td><a href="tel:+37515279970" title="Кликни чтобы позвонить">+375(152)79970;</a></td>
+                                    <td><a href="http://www.diy.by">www.diy.by</a></td>
+                                </tr>
+                                <tr>
+                                    <td>ПРОФИЦВЕТ</td>
+                                    <td>Гродно</td>
+                                    <td>ул. Пушкина, дом 31 а</td>
+                                    <td><a href="tel:+375296733703" title="Кликни чтобы позвонить">+375(29)6733703;</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>ИП МАТЧЕНКО И.А.</td>
+                                    <td>Лида</td>
+                                    <td>ул. Победы, д.37</td>
+                                    <td><a href="tel:+375299933007" title="Кликни чтобы позвонить">+375(29)9933007;</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                  </div>
+                  <div id="Minsk" class="tab_content">
+                    <h3>Минск</h3>
+                    <table class="adress">
+                        <tbody>
+                            <tr>
+                                <td><br>КОЛОР СТУДИЯ TIKKURILA Фирменный магазин</br></td>
+                                <td>пр-т Дзержинского, 9 пом.1028 (центр здания со стороны проспекта)</td>
+                                <td><a href="tel:+375291877706" title="Кликни чтобы позвонить">+375(29)1877706;</a></td>                           
+                                <td><a href="http://farbmann.by" target="_blank">farbmann.by</a></td>
+                            </tr>
+                            <tr>
+                                <td><br>КОЛОР СТУДИЯ TIKKURILA Фирменный магазин</br></td>
+                                <td>Строительный рынок "Малиновка", Павильон № 23/56 Строительный рынок д. Озерцо, Меньковский тракт, д.2</td>
+                                <td><a href="tel:+375291878864" title="Кликни чтобы позвонить">+375(29)1878864;</a></td>
+                                <td><a href="http://farbmann.by">farbmann.by</a></td>
+                            </tr>
+                            <tr>
+                                <td><br>КОЛОР СТУДИЯ TIKKURILA Фирменный магазин</br></td>
+                                <td>ул. Уручская, 19, Строительный рынок "Уручье", Павильон П-51</td>
+                                <td><a href="tel:+375291878824" title="Кликни чтобы позвонить">+375(29)1878824;</a></td>
+                                <<td><a href="http://farbmann.by">farbmann.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ARCHILINE HOUSES</td>
+                                <td>ул. Некрасова 114, офис 49</td>
+                                <td><a href="tel:+375172878020" title="Кликни чтобы позвонить">+375(17)2878020;</a></td>
+                                <td><a href="http://www.archiline.by">www.archiline.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ПАЛАС</td>
+                                <td>ул. Пермская, 46 (пр-т Дзержинского, 53)</td>
+                                <td><a href="tel:+375173558403" title="Кликни чтобы позвонить">+375(17)3558403;</a></td>
+                                <td><a href="http://www.palas.by">www.palas.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ООО "Л-КОЛОР"</td>
+                                <td>ул. Я. Коласа, д. 50 корп.1, пом. 4 Н, каб 8,9</td>
+                                <td><a href="tel:+375296638555" title="Кликни чтобы позвонить">+375(29)6638555;</a></td>
+                                <td><a href="http://www.l-stroycolor.by"www.l-stroycolor.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>MILE</td>
+                                <td>Долгиновский тракт, 188</td>
+                                <td><a href="tel:+375173626565" title="Кликни чтобы позвонить">+375(17)3626565;</a></td>
+                                <td><a href="http://mile.by">mile.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ЧТУП ФРАУ КИСТОЧКА</td>
+                                <td>ул. Тимирязева, 123/1, Строительный рынок "Ждановичи", Павильон 41, 43</td>
+                                <td><a href="tel:+375291068108" title="Кликни чтобы позвонить">+375(29)1068108;</a></td>
+                                <td><a href="http://fraukistochka.by">fraukistochka.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ЧТУП УНИВЕРСАЛ И С</td>
+                                <td>ул. Уручская, 19, Строительный рынок "Уручье", Павильон 94, 117</td>
+                                <td><a href="tel:+375296837396" title="Кликни чтобы позвонить">+375(29)6837396;</a></td>
+                            </tr>
+                            <tr>
+                                <td>ИП ГОРБАТЮК О.И.</td>
+                                <td>ул. Тимирязева, 123/1, Строительный рынок "Ждановичи", Павильон № 170, 172</td>
+                                <td><a href="tel:+375296784231" title="Кликни чтобы позвонить">+375(29)6784231;</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>МАТЕРИК</td>
+                                <td>ул. Притыцкого, 101</td>
+                                <td><a href="tel:+375173140014" title="Кликни чтобы позвонить">+375(17)3140014;</a></td>
+                                <td><a href="http://www.diy.by">www.diy.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>MILE</td>
+                                <td>пр-т Независимости, 171</td>
+                                <td><a href="tel:+375173882600" title="Кликни чтобы позвонить">+375(17)3882600;</a></td>
+                                <td><a href="http://mile.by">mile.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>MILE</td>
+                                <td>ул. Тимирязева, 127</td>
+                                <td><a href="tel:+375173882608" title="Кликни чтобы позвонить">+375(17)3882608;</a></td>
+                                <td><a href="http://mile.by">mile.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>MILE</td>
+                                <td>пр-т Партизанский, 150</td>
+                                <td><a href="tel:+375173011601" title="Кликни чтобы позвонить">+375(17)3011601;</a></td>
+                                <td><a href="http://mile.by">mile.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>MILE</td>
+                                <td>ул. Каменногорская, 3</td>
+                                <td><a href="tel:+375173880008" title="Кликни чтобы позвонить">+375(17)3880008;</a></td>
+                                <td><a href="http://mile.by">mile.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ПАЛАС</td>
+                                <td>ул. Острошицкая, 14</td>
+                                <td><a href="tel:+375172864157" title="Кликни чтобы позвонить">+375(17)2864157;</a></td>
+                                <td><a href="http://www.palas.by">www.palas.by</a></td>
+                            </tr>
+                            <tr>
+                                <td>ИП МОЙСЕЕНКО И.В.</td>
+                                <td>ул. Уручская, 19, Строительный рынок "Уручье", Павильон № 85</td>
+                                <td><a href="tel:+375296992711" title="Кликни чтобы позвонить">+375(29)6992711;</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                  <div id="Mogilev" class="tab_content">
+                    <h3>Могилев</h3>
+                    <table class="adress">
+                        <tbody>
+                            <tr>
+                                <td>ПАЛАС</td>
+                                <td>Могилев</td>
+                                <td>ул. Строителей, 33</td>
+                                <td><a href="tel:+375222706481" title="Кликни чтобы позвонить">+375(22)2706481;</a></td>
+                                <td><a href="http://www.palas.by">www.palas.by</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+            </div>
+            <div class="map_wrapper"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acb35a78d74634d5c9a129c65b45f227813d022aea416863d388f31deced4dab0&amp;width=100%25&amp;height=448&amp;lang=ru_RU&amp;scroll=false"></script></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_divider"></div>
+        <div class="footer_wrapper">
+            <div>
+                <div class="footer_contacts">
+                    Юридическое лицо ТПУП «Краски Колорит» <br>
+                    Беларусь, 220069, г. Минск, пр-т Дзержинского, д. 9 пом 1028 <br>
+                    Дата регистрации в Торговом реестре: 12.11.2018 г.<br>
+                    Номер в Торговом реестре: 431924<br>
+                    Регистрационный номер ЕГР: 191029427<br>
+                    УНП: 191029427<br>
+                    Регистрационный орган: Минский горисполком<br>
+                    Дата регистрации компании: 23.05.2016 г.<br>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="footer_links">
+                    <div class="footer_links_main">
+                        <a href="#main">на главную</a>
+                        <a href="#contacts"> контакты</a>
+                        <a href="#partner"> для партнеров</a>
+                    </div>
+                    <div class="footer_links_sub">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                    <a href="#" class="footer_links_lang">Русский</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer_contacts">
+                    <h4>ТПУП «Краски Колорит»</h4>  <br>
+                    <a href="tel:+375173798891" title="Кликни чтобы позвонить">+375-17-379-88-91;</a> <br>
+                    <a href="tel:+375291525555" title="Кликни чтобы позвонить">+375-29-152-55-55;</a> <br>
+                    
+                    220069, Республика Беларусь, <br>
+                    г. Минск, пр-т Дзержинского, д. 9 пом 1028 <a href="mailto:info@farbmann.by">info@farbmann.by</a><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup">
+        <a href="#" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_body_content">
+                <a href="#" class="popup_body_content_close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup_body_content_title">ЭТО ПОПАП</div>
+                <div class="popup_body_content_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum est atque quia asperiores
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
