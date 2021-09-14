@@ -187,6 +187,7 @@ nav
 	
 
 .reasons
+	background: url('../img/bg/net_bg.png') center (center / cover) no-repeat 
 	padding: 71px 0 45px 0
 	&_block
 		display: flex
@@ -311,6 +312,7 @@ nav
 	position: relative
 	min-height: 717px
 	padding: 49px 0
+	background: url('../img/bg/net_bg.png') center (center / cover) no-repeat 
 	&_content
 		margin: 0 auto
 		padding-top: 30px
@@ -338,6 +340,7 @@ nav
 
 .adress
 	font-size: 14px
+	background-color: rgb(255, 255, 255)
 	tr
 		&:hover
 			background-color: $third-color
@@ -358,8 +361,11 @@ table.adress > tbody > tr > td:first-child
 table.adress > tbody > tr > td:nth-child(3)
 	width: 13%
 	text-align: center
-	
-.map_wrapper
+
+table.adress > tbody > tr:nth-child(2n+2)	
+	background-color: rgb(246, 196, 196)
+
+	.map_wrapper
 	padding-top: 25px
 
 
