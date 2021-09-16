@@ -131,6 +131,7 @@ nav {
 }
 
 .prod_button {
+  display: inline;
   width: 18%;
   height: 100%;
   -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
@@ -1019,6 +1020,33 @@ nav {
           align-items: center;
 }
 
+.colors {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.colors a {
+  background-color: #eedb01;
+  text-indent: 0.5em;
+  -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid black;
+  border-radius: 4px;
+  text-shadow: 1px 1px 0 rgba(155, 155, 155, 0.21);
+  font-size: 18px;
+  display: inline-block;
+  height: 162px;
+  width: 95px;
+  color: black;
+  padding: 3px;
+  margin: 10px;
+}
+.colors a:hover {
+  text-decoration: none;
+  background-color: #d8d8d4;
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 34px;
@@ -1256,6 +1284,44 @@ nav {
 
   .xs-visible {
     display: block;
+  }
+
+  .subtitle {
+    margin-top: 55px;
+  }
+
+  .wrap_prod_xs_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .prod_xs_button {
+    width: 172px;
+    height: 46px;
+    line-height: 42px;
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid black;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#eedb01), to(#d8d8d4));
+    background-image: linear-gradient(to top, #eedb01 0%, #d8d8d4 100%);
+    text-shadow: 1px 1px 0 rgba(155, 155, 155, 0.21);
+    color: #1a1c1c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 2px 2px;
+  }
+  .prod_xs_button:hover {
+    text-decoration: none;
+    color: black;
   }
 
   .subheader {
@@ -1500,5 +1566,14 @@ nav {
   }
   .footer_links_lang {
     margin-top: 10px;
+  }
+
+  .tab_button {
+    padding: 9px 2px;
+  }
+
+  .blog_descr {
+    width: 300px;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
